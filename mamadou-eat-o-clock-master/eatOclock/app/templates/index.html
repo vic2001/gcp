@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+<header class="header">
+    <input class="form-control adress me-2" type="search" placeholder="Search" aria-label="Search">
+
+    <input class="form-control search-bar me-2" type="search" placeholder="Search" aria-label="Search">
+    <img class="search-bar-logo" src="../static/images/search_logo.png" alt="">
+</header>
+<h1 class="banniere_index">Nos suggestions à Proximitée de chez vous</h1>
+<section class="menu_resto">
+  {% for resto in restaurants %}
+    <div class="card" style="width: 18rem;">
+        <a href="#">
+          <img src="{{resto.photo.url}}" class="card-img-top" alt="{{resto.nom}}">
+          <div class="card-body">
+          <h3>{{ resto.nom }}</h3>
+          <p class="card-text">{{resto.description}}</p>
+        </div>
+        </a>
+      </div>
+  {% endfor %}
+ 
+</section>
+<h1 class="banniere_index">Les clients qui ont commandé chez AriLesse</h1>
+<section class="menu_resto">
+    <div class="card" style="width: 18rem;">
+        <img src="../static/images/restau_1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../static/images/restau_2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../static/images/restau_3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../static/images/restau_4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+</section>
+{% endblock %}

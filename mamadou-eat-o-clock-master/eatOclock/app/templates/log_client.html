@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="decor-inscription-client">
+  <div class="second-decor">
+    <h1 class="titre-orange">Inscription</h1>
+    <div class="log_ecart">
+
+        <ul class="sidebarMenuInner">
+
+            <div class="sidebar-items">
+                <label class="sidebar-label" for="Nom">Nom d'utilisateur :</label>
+                <input class="sidebar-input-client" type="input" name="Nom" id="Nom">
+            </div>
+            <div class="sidebar-items">
+                <label class="sidebar-label" for="email">Email :</label>
+                <input class="sidebar-input-client" type="input" name="email" id="email">
+            </div>
+            <div class="sidebar-items">
+                <label class="sidebar-label" for="Adresse">Adresse :</label>
+                <input class="sidebar-input-client" type="input" name="Adresse" id="Adresse">
+            </div>
+            <div class="sidebar-items">
+                <label class="sidebar-label"  for="mdp">Mot de passe :</label>
+                <input class="sidebar-input-client" type="password" name="mdp" id="mdp">
+            </div>
+            <div class="sidebar-items-telephone">
+                <label class="sidebar-label-telephone" for="telephone">telephone : +33 </label>
+                <input class="sidebar-input-client-telephone" type="input" name="telephone" id="telephone">
+            </div>
+            <div class="col-12">
+              <div class="form-check-copie">                
+                <label class="form-check-label titre-orange" for="gridCheck">avez-vous plus de 18 ans ?</label>
+                <input class="form-check-input input-checkbox" type="checkbox" id="gridCheck" name="confirme_age" value="confirme_age">
+              </div>
+            </div>
+            <button class="sidebar-button-client">je m'inscris</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="decor-inscription-Pro">
+  <div class="second-decor">
+    <h1 class="titre-orange">Inscription Pro</h1>
+    <div class="log_ecart">
+
+        <ul class="sidebarMenuInner">
+
+            <div class="sidebar-items">
+                <label class="sidebar-label" for="Nom">Nom de l'etablissement :</label>
+                <input class="sidebar-input-client" type="input" name="Nom" id="Nom">
+            </div>
+            <div class="sidebar-items">
+                <label class="sidebar-label" for="inlineFormSelectPref">Type de commerce :</label>
+                <select class="form-select sidebar-input-client" id="inlineFormSelectPref">
+                <option selected></option>
+                <option value="1">Restaurant</option>
+                <option value="2">Magasin</option>
+                <option value="3">Fleuriste</option>
+                </select>
+            </div>
+            <div class="sidebar-items">
+                <label class="sidebar-label" for="email">Email :</label>
+                <input class="sidebar-input-client" type="input" name="email" id="email">
+            </div>
+            <div class="sidebar-items">
+                <label class="sidebar-label" for="Adresse">Adresse :</label>
+                <input class="sidebar-input-client" type="input" name="Adresse" id="Adresse">
+            </div>
+            <div class="sidebar-items">
+                <label class="sidebar-label"  for="mdp">Mot de passe :</label>
+                <input class="sidebar-input-client" type="password" name="mdp" id="mdp">
+            </div>
+            <div class="sidebar-items-telephone">
+                <label class="sidebar-label-telephone" for="telephone">telephone : +33 </label>
+                <input class="sidebar-input-client-telephone" type="input" name="telephone" id="telephone">
+            </div>
+            <button class="sidebar-button-client">je m'inscris</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}
